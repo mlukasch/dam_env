@@ -9,3 +9,6 @@ Development environment for DAM application:
 How to use:
 Just execute the script:
 startContainers.sh
+
+Docs:
+- Rdf2Any: https://github.com/LinDA-tools/RDF2Any/blob/master/RESTfulAPIsforRDF2Any.pdf
