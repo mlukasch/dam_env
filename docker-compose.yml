@@ -1,0 +1,13 @@
+version: '2'
+services:
+    redis:
+        build: ./redis
+        volumes:
+            - $PWD/volumes/redis/data:/data
+        ports:
+            - "6379:6379"
+    rdf2any:
+        build: ./rdf2any
+        ports:
+            - "7081:8081"
+
