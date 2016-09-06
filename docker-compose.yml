@@ -1,13 +1,21 @@
 version: '2'
 services:
+    dam:
+        build: ./dam
+        volumes:
+            - $PWD/volumes/dam:/DAM
+        ports:
+            - "5000:5000"
+        links:
+            - redis
     redis:
         build: ./redis
         volumes:
             - $PWD/volumes/redis/data:/data
         ports:
             - "6379:6379"
-    rdf2any:
-        build: ./rdf2any
-        ports:
-            - "7081:8081"
+ #   rdf2any:
+ #       build: ./rdf2any
+ #       ports:
+ #           - "7081:8081"
 
